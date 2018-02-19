@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+
+/* --------------------- Fonts -------------------------*/
+
+/*Pacifico*/
+  @font-face {
+    font-family: 'pac';
+    src: url('Fonts/Pacifico/pacifico-webfont.eot');
+    src: url('Fonts/Pacifico/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/Pacifico/pacifico-webfont.woff2') format('woff2'),
+         url('Fonts/Pacifico/pacifico-webfont.woff') format('woff'),
+         url('Fonts/Pacifico/pacifico-webfont.ttf') format('truetype'),
+         url('Fonts/Pacifico/pacifico-webfont.svg#sc') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.yk_scheading
+{
+text-align:center; color:white; font-family: pac; font-size:55px; margin-top:15px;
+}
+
+/*Hide whole page wrapper until the data loads properly : */
+.yk_whole_page_wrapper
+{
+display:none;
+margin-left:15%; margin-right:15%; background-color:white;
+}
+
+/*Ship Details Heading, small and medium screens :*/ 
+.yk_sdh_sams
+{
+	text-align:center; 
+}
+
+/*Ship images in banner are absolute (as banner is only for big screens)*/
+.yk_ship_images_in_banner {
+    position: absolute;
+    left: 1%;
+    width: 98%;
+}
+
+/*Rest of the CSS classes below*/
+
+.yk_to_top {
+    position: fixed;
+    left: 2%;
+    top: 500px;
+}
+
+.yk_banner img 
+{
+	display:none;
+}
+
+.yk_banner  
+{
+	text-align:center;
+	height:250px;
+}
+
+.yk_headingsrow 
+{
+	text-align:center;
+}
+
+.yk_headingsrow div, .yk_contentrow div {
+    border: 1px solid #eadfdf;
+}
+
+.yk_search_btn option
+{
+font-size:25px;
+}
+
+.yk_initial_dropdown
+{
+margin-top:20px;	
+}
+
+.yk_contentrow p
+{
+margin-top: 1.25rem;	
+}
+
+.yk_refreshbtn {
+    background-repeat: no-repeat;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px #e3e3e6;
+}
+
+
+.yk_refreshbtn:active {
+  box-shadow: 0 5px #bbbbfb;
+  transform: translateY(4px);
+}
+
+.yk_chunk_choice_rows
+{
+margin-top: 7px;	
+}
+
+
+.yk_contentdetails {
+    height: 150px;
+	overflow-y: auto;
+    overflow-x: auto;
+}
+
+.yk_offn p, .yk_itn p {
+    font-size: 12px;
+}
+
+.yk_small_medium_headings
+{	
+font-size:12px;
+}
+
+.yk_small_medium_headings h3 {
+    font-weight: bold;
+	color: #87b7c1;
+}
+
+.yk_headingsrow h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007095;
+	padding-top: 5px;
+}
+
+.yk_logo_div
+{
+text-align:center;	
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.yk_search {
+    margin-top: 20px;
+}
+
+
+
+.yk_waiting_message
+{
+	text-align:center;
+	font-size:40px;
+	margin-top:50px;
+}
+
+.yk_error
+{
+display:none;
+font-size:12px;	
+}
+
+#yk_time
+{
+font-size:25px;
+}
+
+.yk_top_logo_large
+{
+width:15%;	
+}
+
+.yk_top_logo_medium
+{
+width:30%;	
+}
+
+
+.yk_top_logo_small
+{
+width:45%;	
+}
+
+.yk_cruise_companies
+{
+text-align:center;
+font-size:14px;	
+}
+
+.yk_cruise_companies, .yk_search
+{
+display:none;
+}
+
+/*Small logo for large screens :*/ 
+@media screen and (min-width: 800px) {
+
+.yk_small_logo
+{
+width:100%;
+}
+
+}
+
+/*Small logo for medium and small screens :*/
+@media (max-width:800px) and (min-width:100px) {
+.yk_small_logo
+{
+width:18%;
+}
+
+}​
+
